@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelphy - Builds What Inspires</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gradient.css" />
+    <link rel="icon" type="image/x-icon" href="img/kelphy-logo.png" />
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav-glass" id="navbar">
+      <div class="flex justify-between items-center">
+        <a href="#hero" class="flex items-center space-x-2">
+          <img src="img/teks-on-side.png" alt="Logo Kelphy" class="h-10" />
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#hero"
+            class="text-sm uppercase tracking-wider hover:text-[#02d590] transition"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-sm uppercase tracking-wider hover:text-[#02d590] transition"
+            >About</a
+          >
+          <a
+            href="#portfolio"
+            class="text-sm uppercase tracking-wider hover:text-[#02d590] transition"
+            >Portfolio</a
+          >
+          <a
+            href="#contact"
+            class="text-sm uppercase tracking-wider hover:text-[#02d590] transition"
+            >Contact</a
+          >
+        </div>
+        <div class="md:hidden">
+          <button
+            id="menu-btn"
+            class="text-gray-700 focus:outline-none text-xl"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="text-gray-800 hover:text-[#02d590]">Home</a>
+      <a href="#about" class="text-gray-800 hover:text-[#02d590]">About</a>
+      <a href="#portfolio" class="text-gray-800 hover:text-[#02d590]"
+        >Portfolio</a
+      >
+      <a href="#contact" class="text-gray-800 hover:text-[#02d590]">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="hero-pattern vintage-overlay min-h-screen flex items-center justify-center relative text-white"
+    >
+      <div class="gradient-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+        <div class="glow"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+      </div>
+      <div class="container mx-auto px-6 z-10">
+        <div class="max-w-3xl mx-auto text-center px-4">
+          <h1
+            class="text-5xl sm:text-7xl md:text-9xl font-bold mb-6"
+            style="color: var(--primary)"
+          >
+            Kelphy
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+            Builds What Inspires
+          </p>
+          <a href="#portfolio" class="btn">Project Kami</a>
+        </div>
+      </div>
+      <div class="particles-container" id="particles-container"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">About Us</h2>
+          <div class="w-20 h-1 mx-auto primary-gradient"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <img
+              src="img/teks-on-bottom.png"
+              alt="Logo Kelphy"
+              class="w-full h-auto rounded-xl sepia-filter"
+            />
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-3xl font-bold mb-6">Kenalan Dulu Sama Kami</h3>
+            <p class="text-lg mb-6 leading-relaxed">
+              Kami kreator digital yang ngerjain web development, UI/UX design,
+              dan desain grafis dengan sentuhan modern & rapi. Kami percaya
+              desain yang bagus itu bukan cuma soal warna atau font, tapi soal
+              gimana caranya bikin brand kamu jadi lebih dipercaya dan stand out
+              di dunia digital.
+            </p>
+            <p class="text-lg mb-8 leading-relaxed">
+              Mulai dari bikin website bisnis lokal sampai branding startup,
+              kita ngerjain semua dengan vibe yang simple, fungsional, dan tetap
+              estetik. Di balik layar, kita kerja bareng dengan mindset
+              kolaboratif dan fokus sama hasil, jadi kamu gak cuma dapet
+              hasil, tapi juga pengalaman kerja sama yang fun dan jelas.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <span
+                class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm"
+                >Web Development</span
+              >
+              <span
+                class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm"
+                >UI/UX Design</span
+              >
+              <span
+                class="px-4 py-2 bg-white rounded-full text-sm font-medium shadow-sm"
+                >Graphic Design</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Our Portfolio</h2>
+          <div class="w-20 h-1 mx-auto primary-gradient"></div>
+          <p class="text-xl mt-6 max-w-2xl mx-auto">
+            Beberapa project yang sudah kami kerjakan.
+          </p>
+        </div>
+
+        <!-- Portfolio Filters -->
+        <div class="flex justify-center mb-12">
+          <div class="inline-flex rounded-md shadow-sm" role="group">
+            <button
+              type="button"
+              class="portfolio-filter px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 active-filter"
+              data-category="all"
+            >
+              Semua
+            </button>
+            <button
+              type="button"
+              class="portfolio-filter px-4 py-2 text-sm font-medium bg-white border-t border-b border-gray-200 hover:bg-gray-100"
+              data-category="web"
+            >
+              Website
+            </button>
+            <button
+              type="button"
+              class="portfolio-filter px-4 py-2 text-sm font-medium bg-white border-t border-b border-gray-200 hover:bg-gray-100"
+              data-category="ui"
+            >
+              UI/UX
+            </button>
+            <button
+              type="button"
+              class="portfolio-filter px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-r-lg hover:bg-gray-100"
+              data-category="graphic"
+            >
+              Desain
+            </button>
+          </div>
+        </div>
+
+        <!-- Portfolio Items -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <!-- Web Development 1 -->
+          <div class="vintage-card portfolio-item" data-category="web">
+            <div class="overflow-hidden">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Retro-themed e-commerce website design with warm color palette"
+                class="w-full h-64 object-cover sepia-filter hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">M.E.LEGACY</h3>
+              <p class="text-gray-600 mb-4">
+                Sebuah website profil perusahaan yang bergerak dalam bidang
+                konstrusksi
+              </p>
+              <span
+                class="inline-block px-3 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full"
+                >Web Development</span
+              >
+            </div>
+          </div>
+
+          <!-- Web Development 2 -->
+          <div class="vintage-card portfolio-item" data-category="web">
+            <div class="overflow-hidden">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Elegant CMS dashboard with classic typography and subtle textures"
+                class="w-full h-64 object-cover sepia-filter hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Website 2</h3>
+              <p class="text-gray-600 mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus eius voluptatibus quaerat soluta animi perspiciatis
+                labore, beatae dolorem recusandae assumenda nemo tenetur aperiam
+                non! Soluta sed quasi atque at harum.
+              </p>
+              <span
+                class="inline-block px-3 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full"
+                >Web Development</span
+              >
+            </div>
+          </div>
+
+          <!-- UI/UX 1 -->
+          <div class="vintage-card portfolio-item" data-category="ui">
+            <div class="overflow-hidden">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Mobile app interface with retro design elements and warm color palette"
+                class="w-full h-64 object-cover sepia-filter hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">UI/UX 2</h3>
+              <p class="text-gray-600 mb-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste,
+                temporibus exercitationem ratione harum minus commodi
+                necessitatibus! Rem nisi doloremque modi quas, deleniti minus
+                sed et labore magni odit qui consequuntur.
+              </p>
+              <span
+                class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full"
+                >UI/UX Design</span
+              >
+            </div>
+          </div>
+
+          <!-- UI/UX 2 -->
+          <div class="vintage-card portfolio-item" data-category="ui">
+            <div class="overflow-hidden">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Coffee shop mobile ordering interface with nostalgic aesthetic"
+                class="w-full h-64 object-cover sepia-filter hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">UI/UX 2</h3>
+              <p class="text-gray-600 mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                minus fugit culpa inventore dicta commodi debitis maxime ipsum
+                amet cupiditate neque, itaque dolore deserunt quae hic ducimus
+                nostrum in impedit.
+              </p>
+              <span
+                class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full"
+                >UI/UX Design</span
+              >
+            </div>
+          </div>
+
+          <!-- Graphic Design 1 -->
+          <div class="vintage-card portfolio-item" data-category="graphic">
+            <div class="overflow-hidden">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Series of vintage-style branding elements including logo, business card, and packaging"
+                class="w-full h-64 object-cover sepia-filter hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Desain Feed IG</h3>
+              <p class="text-gray-600 mb-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                dolorum iusto repudiandae maxime minima tempora sequi
+                perferendis quos incidunt. Pariatur commodi mollitia aut autem
+                corporis culpa asperiores nemo porro expedita.Complete visual
+                identity for a family-owned distillery business
+              </p>
+              <span
+                class="inline-block px-3 py-1 text-xs font-medium bg-purple-100 text-purple-800 rounded-full"
+                >Graphic Design</span
+              >
+            </div>
+          </div>
+
+          <!-- Graphic Design 2 -->
+          <div class="vintage-card portfolio-item" data-category="graphic">
+            <div class="overflow-hidden">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Set of retro-inspired posters with distressed textures and classic typography"
+                class="w-full h-64 object-cover sepia-filter hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Desain Logo</h3>
+              <p class="text-gray-600 mb-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia, omnis tenetur. Cumque quidem ex reprehenderit esse
+                tenetur consequuntur aliquam voluptatibus non tempora
+                consectetur molestias blanditiis ea neque cupiditate, in
+                dolorum!
+              </p>
+              <span
+                class="inline-block px-3 py-1 text-xs font-medium bg-purple-100 text-purple-800 rounded-full"
+                >Graphic Design</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="-full max-w-xs md:max-w-2xl h-1 mx-auto primary-gradient"
+        ></div>
+        <p class="text-xl mt-6 max-w-2xl mx-auto text-center">
+          Gak cuma itu kami juga bisa bantu joki tugas-tugas kamu loh.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+          <div class="w-20 h-1 mx-auto primary-gradient"></div>
+          <p class="text-xl mt-6 max-w-2xl mx-auto">
+            Udah ada bayangan mau bikin project apa? Gas kontak kami.
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="lg:w-1/2">
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Nama</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-2 contact-input"
+                    placeholder="Nama kamu"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-2 contact-input"
+                    placeholder="Email kamu"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="w-full px-4 py-2 contact-input"
+                  placeholder="Mau bikin apa?"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Pesan</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full px-4 py-2 contact-input"
+                  placeholder="Kasih tau tentang project kamu"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full px-6 py-3 primary-gradient text-white font-medium uppercase tracking-wider rounded-md hover:opacity-90 transition duration-300"
+              >
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+
+          <div class="lg:w-1/2 bg-white p-8 rounded-xl shadow-sm">
+            <h3 class="text-2xl font-bold mb-6">Informasi Kontak</h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-full mr-4"
+                >
+                  <i class="fas fa-map-marker-alt text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-900">Lokasi</h4>
+                  <p class="text-gray-600">Jawa Timur, Indonesia</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-full mr-4"
+                >
+                  <i class="fas fa-envelope text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-900">Email</h4>
+                  <p class="text-gray-600">kelphy.site@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-full mr-4"
+                >
+                  <i class="fas fa-phone-alt text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-900">No HP</h4>
+                  <p class="text-gray-600">+62 812-6867-6973</p>
+                  <p class="text-gray-600">+62 857-0882-4304</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <h4 class="font-medium text-gray-900 mb-4">Ikutin Kami</h4>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.instagram.com/kelphy.site/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-pink-500 hover:text-white transition duration-300"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@kelphy.site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-gray-700 hover:text-white transition duration-300"
+                >
+                  <i class="fab fa-tiktok"></i>
+                </a>
+                <a
+                  href="https://github.com/kelphysite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-gray-700 hover:text-white transition duration-300"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-12">
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row gap-12 md:gap-24 justify-between items-center"
+        >
+          <div class="mb-6 md:mb-0 px-6 text-center md:text-left">
+            <img src="img/teks-on-side.png" alt="Logo Kelphy" class="h-28" />
+            <p class="text-center text-gray-300 max-w-md text-2xl mt-2">
+              Builds What Inspires
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-8 md:gap-20 w-full max-w-xs md:max-w-md mx-auto"
+          >
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#hero"
+                    class="text-gray-300 hover:text-white transition"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="text-gray-300 hover:text-white transition"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="text-gray-300 hover:text-white transition"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-gray-300 hover:text-white transition"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Services</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >Web Development</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >UI/UX Design</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-gray-300 hover:text-white transition"
+                    >Graphic Design</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-12 pt-8">
+          <p class="text-center text-gray-400 text-sm">
+            © 2025 Kelphy. All rights reserved. Builds With Inspires.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/gradient.js"></script>
+  </body>
+</html>
