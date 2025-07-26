@@ -51,6 +51,21 @@ h4 {
   background: linear-gradient(135deg, #02d590, #02a8d5);
 }
 
+.fade-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px; /* atur sesuai kebutuhan */
+  pointer-events: none;
+  z-index: 20;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0) 0%,
+    #f9fafb 100%
+  );
+}
+
 .vintage-overlay {
   position: relative;
 }
