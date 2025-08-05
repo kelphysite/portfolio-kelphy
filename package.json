@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "tailwindcss": "^4.1.11"
   }
 }

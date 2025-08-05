@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/gradient.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <link rel="icon" type="image/x-icon" href="img/kelphy-logo.png" />
     <link
       rel="stylesheet"
@@ -81,13 +82,26 @@
           <h1
             class="text-5xl sm:text-7xl md:text-9xl font-bold mb-6"
             style="color: var(--primary)"
+            data-aos="fade-up"
+            data-aos-duration="2000"
           >
             Kelphy
           </h1>
-          <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+          <p
+            class="text-xl md:text-2xl mb-8 leading-relaxed"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-delay="800"
+          >
             Builds What Inspires
           </p>
-          <a href="#portfolio" class="btn">Project Kami</a>
+          <div
+            data-aos="fade-in"
+            data-aos-duration="1800"
+            data-aos-delay="1300"
+          >
+            <a href="#portfolio" class="btn">Project Kami</a>
+          </div>
         </div>
       </div>
       <div class="particles-container" id="particles-container"></div>
@@ -98,8 +112,18 @@
     <section id="about" class="py-20 bg-gray-50 mt-11">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">About Us</h2>
-          <div class="w-20 h-1 mx-auto primary-gradient"></div>
+          <h2
+            class="text-4xl font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-offset="120"
+            data-aos-duration="1500"
+          >
+            About Us
+          </h2>
+          <div
+            class="w-20 h-1 mx-auto primary-gradient rounded-full"
+            data-aos="expand-line"
+          ></div>
         </div>
 
         <div class="flex flex-col md:flex-row items-center">
@@ -123,8 +147,8 @@
               Mulai dari bikin website bisnis lokal sampai branding startup,
               kita ngerjain semua dengan vibe yang simple, fungsional, dan tetap
               estetik. Di balik layar, kita kerja bareng dengan mindset
-              kolaboratif dan fokus sama hasil, jadi kamu gak cuma dapet
-              hasil, tapi juga pengalaman kerja sama yang fun dan jelas.
+              kolaboratif dan fokus sama hasil, jadi kamu gak cuma dapet hasil,
+              tapi juga pengalaman kerja sama yang fun dan jelas.
             </p>
             <div class="flex flex-wrap gap-4">
               <span
@@ -149,7 +173,13 @@
     <section id="portfolio" class="py-20">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">Our Portfolio</h2>
+          <h2
+            class="text-4xl font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            Portfolio
+          </h2>
           <div class="w-20 h-1 mx-auto primary-gradient"></div>
           <p class="text-xl mt-6 max-w-2xl mx-auto">
             Beberapa project yang sudah kami kerjakan.
@@ -349,7 +379,13 @@
     <section id="contact" class="py-20 bg-gray-50">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+          <h2
+            class="text-4xl font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            Contact Us
+          </h2>
           <div class="w-20 h-1 mx-auto primary-gradient"></div>
           <p class="text-xl mt-6 max-w-2xl mx-auto">
             Udah ada bayangan mau bikin project apa? Gas kontak kami.
@@ -574,5 +610,13 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/gradient.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // durasi animasi 1 detik
+        once: true, // animasi hanya sekali
+        offset: 100, // jarak offset scroll
+      });
+    </script>
   </body>
 </html>
