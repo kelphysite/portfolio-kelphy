@@ -87,3 +87,20 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+// Animasi button kirim pesan
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".btn-animated");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          button.classList.add("animate-btn");
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(button);
+});
