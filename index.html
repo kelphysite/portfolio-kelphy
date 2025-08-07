@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/gradient.css" />
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="icon" type="image/x-icon" href="img/kelphy-logo.png" />
     <link
       rel="stylesheet"
@@ -16,34 +20,47 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="nav-glass" id="navbar">
-      <div class="flex justify-between items-center">
-        <a href="#hero" class="flex items-center space-x-2">
+    <nav class="nav-glass animate__animated animate__fadeInDown" id="navbar">
+      <div class="flex justify-between items-center overflow-hidden">
+        <a
+          href="#hero"
+          class="flex items-center space-x-2"
+          data-aos="fade-in"
+          data-aos-delay="500"
+        >
           <img src="img/teks-on-side.png" alt="Logo Kelphy" class="h-10" />
         </a>
         <div class="hidden md:flex space-x-8">
           <a
             href="#hero"
             class="text-sm uppercase tracking-wider hover:text-[#02d590] transition"
+            data-aos="fade-down"
+            data-aos-delay="600"
             >Home</a
           >
           <a
             href="#about"
             class="text-sm uppercase tracking-wider hover:text-[#02d590] transition"
+            data-aos="fade-down"
+            data-aos-delay="700"
             >About</a
           >
           <a
             href="#portfolio"
             class="text-sm uppercase tracking-wider hover:text-[#02d590] transition"
+            data-aos="fade-down"
+            data-aos-delay="800"
             >Portfolio</a
           >
           <a
             href="#contact"
             class="text-sm uppercase tracking-wider hover:text-[#02d590] transition"
+            data-aos="fade-down"
+            data-aos-delay="900"
             >Contact</a
           >
         </div>
-        <div class="md:hidden">
+        <div class="md:hidden" data-aos="fade-down" data-aos-delay="600">
           <button
             id="menu-btn"
             class="text-gray-700 focus:outline-none text-xl"
